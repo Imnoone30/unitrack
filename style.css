@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding:0;
+   
+}
+
+header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: ;
+    text-align: center;
+    position: fixed;  /* Fix header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Span the entire width */
+    z-index: 1000;  /* Ensure header is on top of other elements */
+}
+
+main {
+    padding-top: 80px;  /* Add padding to prevent content from hiding under the header */
+}
+
+.tab-container {
+    margin: 30px;
+}
+
+.tabs {
+    display: flex; /* Align tabs in a row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px; /* Space between tabs */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for color change */
+    flex: 1; /* Allow tabs to stretch and fill the container */
+}
+
+.tab-button:last-child {
+    margin-right: 0; /* Remove margin from the last tab */
+}
+
+.tab-button:hover {
+    background-color: maroon; /* Color on hover */
+}
+
+.tab-button.active {
+    background-color: maroon; /* Color when active */
+}
+
+.tab-content {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 155%; 
+    background-color: #1e1e1e;
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.tab-content h2 {
+    margin-top:100;
+}
+
+.tab-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tab-content th, td {
+    padding: 10px;
+    text-align: center;
+    border: 10px solid #333;
+}
+
+.tab-content th {
+    background-color: #444;
+  
+    
+}
+
+.tab-content tr:nth-child(even) {
+    background-color: #2a2a2a;
+  
+}
+
+.tab-content tr:nth-child(odd) {
+    background-color: #333;
+}
+
+.attendance-btn {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.attendance-btn.present {
+    background-color: #28a745; /* Color for present */
+}
+
+.attendance-btn.absent {
+    background-color: #dc3545; /* Color for absent */
+}
+
+.attendance-btn.clicked {
+    background-color: #007bff; /* Color when clicked */
+}
+
+.fee-status p {
+    margin: 5px 0;
+}
+
+#map-container {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: row; /* Keep tabs in a row on smaller screens */
+        overflow-x: auto; /* Allow horizontal scrolling if tabs overflow */
+        white-space: nowrap; /* Prevent tabs from wrapping */
+    }
+
+    .tab-button {
+        width: auto; /* Allow tabs to fit their content */
+        margin-right: 10px; /* Maintain margin between tabs */
+    }
+
+    .tab-content {
+        padding: 10px; /* Reduce padding in tab contents on smaller screens */
+    }
+
+    .tab-content table {
+        font-size: 14px; /* Reduce font size for tables on smaller screens */
+    }
+
+    .tab-content th, td {
+        padding: 8px; /* Reduce padding in table cells */
+      
+    }
+}

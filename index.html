@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Management System</title>
+    <link rel="stylesheet" href="style.css"s>
+</head>
+<body>
+    <header>
+        <h1>Smart Campus Management System</h1>
+    </header>
+
+    <main>
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="home">Home</button>
+                <button class="tab-button" data-tab="attendance">Attendance</button>
+                <button class="tab-button" data-tab="bus-management">Bus Management</button>
+                <button class="tab-button" data-tab="calendar">Calendar</button>
+                <button class="tab-button" data-tab="notes">Notes</button>
+                <button class="tab-button" data-tab="fee-management">Fee Management</button>
+                <button class="tab-button" data-tab="timetable">Timetable</button>
+                <button class="tab-button" data-tab="map">Campus Map</button>
+                <button class="tab-button" data-tab="health-safety">Health and Safety</button>
+                <button class="tab-button" data-tab="resource-management">Library Management</button>
+                <button class="tab-button" data-tab="sustainability">Sustainability</button>
+                <button class="tab-button" data-tab="ai-learning">AI Learning</button>
+                <button class="tab-button" data-tab="alumni-career">Alumni and Career</button>
+                <button class="tab-button" data-tab="event-management">Event Management</button>
+                <button class="tab-button" data-tab="mental-health">Mental Health</button>
+                <button class="tab-button" data-tab="security">Security</button>
+                <button class="tab-button" data-tab="communication">Communication</button>
+            </div>
+
+            <div class="tab-content" id="home">
+                <h2>Welcome to Unitrack</h2>
+                <p>Your all-in-one campus management solution.</p>
+            </div>
+
+            <div class="tab-content" id="attendance">
+                <h2>Attendance Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Tejveer</td>
+                            <td>23EJIDS049</td>
+                            <td>
+                                <button class="attendance-btn present" data-status="P">P</button>
+                                <button class="attendance-btn absent" data-status="A">A</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Madhumati</td>
+                            <td>67890</td>
+                            <td>
+                                <button class="attendance-btn present" data-status="P">P</button>
+                                <button class="attendance-btn absent" data-status="A">A</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="bus-management">
+                <h2>Bus Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bus No.</th>
+                            <th>Route</th>
+                            <th>Driver Name</th>
+                            <th>Driver Contact</th>
+                            <th>Stops</th>
+                            <th>Route Changes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>Main Campus Route</td>
+                            <td>John Doe</td>
+                            <td>+1234567890</td>
+                            <td>Main St, Park Ave, University Blvd</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>North Campus Route</td>
+                            <td>Jane Smith</td>
+                            <td>+0987654321</td>
+                            <td>North St, Central Ave, University Blvd</td>
+                            <td>Temporary Detour via Park Ave</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="calendar">
+                <h2>Calendar and Tasks</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Task</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-08-18</td>
+                            <td>Complete Assignment 5</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>2024-08-20</td>
+                            <td>Group Project Meeting</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="notes">
+                <h2>Notes Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Uploader</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lecture Notes - Chapter 1</td>
+                            <td>Teacher</td>
+                            <td>Uploaded</td>
+                        </tr>
+                        <tr>
+                            <td>Student Notes - Chapter 1</td>
+                            <td>Student (Pending Approval)</td>
+                            <td>Waiting for Teacher Approval</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Existing Tabs -->
+            <div class="tab-content" id="fee-management">
+                <h2>Fee Management</h2>
+                <div class="fee-status">
+                    <p><strong>Due Fees:</strong> $500</p>
+                    <p><strong>Submitted Fees:</strong> $300</p>
+                    <p><strong>Delay Notification:</strong> Your payment is overdue by 5 days.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="timetable">
+                <h2>Smart Timetable</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>9:00 AM - 10:30 AM</td>
+                            <td>Math</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11:00 AM - 12:30 PM</td>
+                            <td>Physics</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>2:00 PM - 3:30 PM</td>
+                            <td>Chemistry</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="map">
+                <h2>Campus Map</h2>
+                <div id="map-container"></div>
+            </div>
+
+            <div class="tab-content" id="health-safety">
+                <h2>Health and Safety Monitoring</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emergency Alerts</td>
+                            <td><button id="send-alert">Send Test Alert</button></td>
+                        </tr>
+                        <tr>
+                            <td>Health Monitoring</td>
+                            <td>Air Quality: Good</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="resource-management">
+                <h2>Resource Management</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Facility Booking</td>
+                            <td>Calendar-based booking system coming soon.</td>
+                        </tr>
+                        <tr>
+                            <td>Inventory Management</td>
+                            <td>RFID/QR code tracking system coming soon.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="sustainability">
+                <h2>Sustainable Campus Initiatives</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Initiative</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Recycling Program</td>
+                            <td>In progress</td>
+                        </tr>
+                        <tr>
+                            <td>Energy Conservation</td>
+                            <td>In progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-content" id="ai-learning">
+                <h2>AI-enhanced Learning Analytics</h2>
+                <p>Coming Soon: Personalized learning recommendations powered by AI.</p>
+            </div>
+
+            <div class="tab-content" id="alumni-career">
+                <h2>Alumni and Career Services Integration</h2>
+                <p>Connecting students with alumni for career guidance and networking.</p>
+            </div>
+
+            <div class="tab-content" id="event-management">
+                <h2>Event and Activity Management</h2>
+                <p>Plan and manage campus events and activities with ease.</p>
+            </div>
+
+            <div class="tab-content" id="mental-health">
+                <h2>Mental Health and Well-being Support</h2>
+                <p>Access mental health resources and support services.</p>
+            </div>
+
+            <div class="tab-content" id="security">
+                <h2>Smart Security and Access Control</h2>
+                <p>Access control management system coming soon.</p>
+            </div>
+
+            <div class="tab-content" id="communication">
+                <h2>Advanced Communication Platforms</h2>
+                <p>Stay connected with students and faculty via advanced communication platforms.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
